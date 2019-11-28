@@ -39,6 +39,14 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
                 <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
@@ -50,6 +58,27 @@
                 <plugin>
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>3.0.2</version>
+
+                    <!--<executions>-->
+                        <!--<execution>-->
+                            <!--<id>copy-xmls</id>-->
+                            <!--<phase>process-sources</phase>-->
+                            <!--<goals>-->
+                                <!--<goal>copy-resources</goal>-->
+                            <!--</goals>-->
+                            <!--<configuration>-->
+                                <!--<outputDirectory>${basedir}/target/classes</outputDirectory>-->
+                                <!--<resources>-->
+                                    <!--<resource>-->
+                                        <!--<directory>${basedir}/src/main/java</directory>-->
+                                        <!--<includes>-->
+                                            <!--<include>**/*.xml</include>-->
+                                        <!--</includes>-->
+                                    <!--</resource>-->
+                                <!--</resources>-->
+                            <!--</configuration>-->
+                        <!--</execution>-->
+                    <!--</executions>-->
                 </plugin>
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>

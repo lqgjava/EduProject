@@ -133,7 +133,11 @@
             <version>${spring.version}</version>
         </dependency>
         <!--添加spring/springmvc的依赖   end================================-->
-
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>${mybatis-spring.version}</version>
+        </dependency>
         <!--添加service的依赖-->
         <dependency>
             <artifactId>edu-service</artifactId>

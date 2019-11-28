@@ -1,4 +1,4 @@
-package com.yuxiiu.edu.web.controller;
+package com.yuxiu.edu.web.controller;
 
 import com.yuxiu.edu.model.User;
 import com.yuxiu.edu.service.IUserService;

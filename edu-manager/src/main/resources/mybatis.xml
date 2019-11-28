@@ -6,10 +6,10 @@
     <!-- 别名配置 -->
     <typeAliases>
         <!-- 批量配置别名：指定批量定义别名的类包，别名为类名（首字母大小写都可） -->
-        <package name="com.gyf.backoffice.model"/>
+        <package name="com.yuxiu.edu.model"/>
     </typeAliases>
     <mappers>
         <!-- 批量加载映射文件 -->
-        <package name="com.gyf.backoffice.mapper"/>
+        <package name="com.yuxiu.edu.mapper"/>
     </mappers>
 </configuration>
